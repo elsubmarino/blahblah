@@ -1,9 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+	
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-offset-4 col-md-4">
-			<form id="qnaRegisterForm">
+		<div class="col-md-offset-4 col-md-4" style="margin-top:100px;">
+			<form id="qnaRegisterForm" action="/qna/register_ok" method="POST">
+				<input type="hidden" name="email" value="${sessionScope.me.email }">
 				<div class="panel-group">
 					<div class="panel panel-primary">
 						<div class="panel-heading">±Û¾²±â</div>

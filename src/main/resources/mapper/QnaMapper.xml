@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shoes.mapper.QnaMapper">
+	<insert id="qnaRegister">
+		insert into qna(title,content,email) values(#{title},#{content},#{email})
+	</insert>
+
+	<select id="getLists" resultType="com.shoes.domain.Qna" parameterType="Integer">
+		select num,title,email,date,hit from qna limit #{num},10
+	</select>
+	
+	<select id="getList" resultType="com.shoes.domain.Qna" parameterType="Integer">
+		select num,title,email,date,hit,content from qna where num=#{num}
+	</select>
+	
+	<select id="getCount" resultType="int">
+		select count(*) from qna
+	</select>
+	
+
+</mapper>

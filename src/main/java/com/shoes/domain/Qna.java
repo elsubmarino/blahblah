@@ -8,6 +8,15 @@ public class Qna {
 	private String content;
 	private String hit;
 	private Date date;
+	private String email;
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
 	public int getNum() {
 		return num;

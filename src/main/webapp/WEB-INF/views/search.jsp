@@ -36,43 +36,18 @@
 				</div>
 				<div>
 					<div style="width: 225px;" class="button">
-						<a class="btn btn-default" style="border:0;margin:30px 0;" class="hovering">
-							<img src="/resources/media/pwp_sheet2.jpg">
+						<a class="btn btn-default"
+							style="border: 0; margin: 30px 0; box-sizing: border-box"
+							class="hovering"> <img src="/resources/media/pwp_sheet2.jpg">
 							<hr>
 							<div class="text-left bold">상품명</div>
-							<div class="text-left" style="margin-left:10px;">설명</div>
-							<div class="text-left" style="margin-left:10px;">가격</div>
-							</a>
+							<div class="text-left" style="margin-left: 10px;">설명</div>
+							<div class="text-left" style="margin-left: 10px;">가격</div>
+						</a>
 					</div>
-					<div style="width: 225px;" class="button">
-						<a class="btn btn-default" style="border:0" class="hovering">
-							<img src="/resources/media/pwp_sheet2.jpg">
-							<hr>
-							<div class="text-left bold">상품명</div>
-							<div class="text-left">설명</div>
-							<div class="text-left">가격</div>
-							</a>
-					</div>
-						<div style="width: 225px;" class="button">
-						<a class="btn btn-default" style="border:0" class="hovering">
-							<img src="/resources/media/pwp_sheet2.jpg">
-							<hr>
-							<div class="text-left bold">상품명</div>
-							<div class="text-left">설명</div>
-							<div class="text-left">가격</div>
-							</a>
-					</div>
-						<div style="width: 225px;" class="button">
-						<a class="btn btn-default" style="border:0" class="hovering">
-							<img src="/resources/media/pwp_sheet2.jpg">
-							<hr>
-							<div class="text-left bold">상품명</div>
-							<div class="text-left">설명</div>
-							<div class="text-left">가격</div>
-							</a>
-					</div>				
-					
-					
+
+
+
 
 				</div>
 			</div>

@@ -10,10 +10,10 @@
 <meta charset="UTF-8">
 <title>당신의 꿈이 이루어지는 곳, 울랄라!</title>
 <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.css?ver=2">
-<link rel="stylesheet" type="text/css" href="/resources/css/main.css">
+<link rel="stylesheet" type="text/css" href="/resources/css/main.css?ver=2">
 <script src="/resources/js/jquery-latest.js"></script>
 <script src="/resources/js/bootstrap.js"></script>
-<script src="/resources/js/main.js?ver=1" charset="utf-8"></script>
+<script src="/resources/js/main.js?ver=2" charset="utf-8"></script>
 </head>
 <body>
 <div id="wrapper">

@@ -35,10 +35,6 @@ public class MainController {
 		return "search";
 	}
 	
-	@RequestMapping(value="/qna")
-	public String qna(){
-		return "qna";
-	}
 	@RequestMapping(value="/men")
 	public String men(){
 		return "men";
