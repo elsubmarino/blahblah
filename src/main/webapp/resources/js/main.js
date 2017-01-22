@@ -1,6 +1,6 @@
 var regExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i; // 이메일
-																									// 정규식
-																									// 표현
+// 정규식
+// 표현
 var regExp2 = /^(?=.*[a-zA-Z])((?=.*\d)|(?=.*\W)).{6,20}$/ // 패스워드 정규식 표현
 var script = document.createElement('script');
 script.src = '/resources/js/jquery-latest.js';
@@ -13,8 +13,8 @@ script.type = 'text/javascript';
 script.charset = 'utf-8';
 document.getElementsByTagName('head')[0].appendChild(script);
 
-
 $(function() {
+	var color;// 컬러값
 	// 글 읽기
 
 	// 로그인 인증
@@ -22,8 +22,9 @@ $(function() {
 		var email = $("#loginEmail").val();
 		var pwd = $("#loginPwd").val();
 		if (!email) {
-			alert("이메일을 입력하세요!");
-			returnl
+			$("#alertContent").text("이메일 주소를 입력하지 않았습니다!");
+			$("#alert").modal("show");
+			return;
 		} else if (email.match(regExp) == null) {
 			alert("이메일을 제대로 입력하세요!");
 			return;
@@ -77,7 +78,7 @@ $(function() {
 			alert("패스워드가 일치하지 않습니다!");
 			return;
 		}
-		if (password.match(regExp2) == null) {
+		if (pwd1.match(regExp2) == null) {
 			alert("패스워는 6글자에서 20글자\n최소 1개의 숫자 혹은 특수문자를 포함해야 합니다.");
 			return;
 		}
@@ -126,12 +127,21 @@ $(function() {
 		}, "fast");
 	});
 
-	$("#men").mouseenter(function() {
+	$("#men,#female,#boy,#girl").mouseenter(function() {
+		if (color != undefined) {
+			color.css("border-bottom", "0");
+		}
+		$(this).css("border-bottom", "1px solid black")
 		$(".submenu").show();
-		$("#men").css("border-bottom", "1px solid black");
+		$("#banner").hide();
+		color = $(this);
 	});
 	$("#subsubmenu, #submenu").mouseleave(function() {
 		$(".submenu").hide();
+		$("#banner").show();
+		if (color != undefined) {
+			color.css("border-bottom", "0");
+		}
 	});
 	/*
 	 * $(".submenu").mouseout(function(){ $(this).hide(); })

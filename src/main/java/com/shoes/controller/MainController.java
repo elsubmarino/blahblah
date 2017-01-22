@@ -30,10 +30,6 @@ public class MainController {
 		return "help";
 	}
 	
-	@RequestMapping(value="/search")
-	public String search(){
-		return "search";
-	}
 	
 	@RequestMapping(value="/men")
 	public String men(){

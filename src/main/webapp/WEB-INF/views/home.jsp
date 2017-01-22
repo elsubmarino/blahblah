@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
-<div class="container-fluid">
+<div class="container-fluid " style="padding-top:192px;">
 
-	<div class="row" >
+	<div class="row">
 		<div class="float-left-font	 big-font">
 			당신의 인생에<br />속도감을 더하십시오.
 		</div>
@@ -15,7 +15,8 @@
 			style="padding: 0; margin: 0;" autoplay loop>
 		</video>
 	</div>
-	<div class="row" >
+	<div>
+	<div class="row" style="margin-top:-">
 		<div class="float-left-font less-big-font">
 			울랄라 스펙터클 <br /> <span>고강도 트레이닝에 최적화된<br />최강의 내구성을 자랑하는<br />울랄라
 				스펙터클을 지금 만나보십시오!
@@ -26,7 +27,7 @@
 			</span>
 		</div>
 
-		<img src="/resources/media/hd1.jpg" >
+		<img src="/resources/media/hd1.jpg">
 		<div class="float-left-font less-big-font">
 			빅 지저 점핑 슈즈<br /> <span>가볍게 뛰세요.<br />그것만으로도 충분합니다!
 			</span>

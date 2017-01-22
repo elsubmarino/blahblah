@@ -12,19 +12,25 @@
 <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.css?ver=2">
 <link rel="stylesheet" type="text/css" href="/resources/css/main.css?ver=2">
 <script src="/resources/js/jquery-latest.js"></script>
-<script src="/resources/js/bootstrap.js"></script>
-<script src="/resources/js/main.js?ver=2" charset="utf-8"></script>
+<script src="/resources/js/bootstrap.js?ver=1"></script>
+<script src="/resources/js/main.js?ver=4" charset="utf-8"></script>
+
 </head>
 <body>
 <div id="wrapper">
 	<div id="header">
 		<tiles:insertAttribute name="header"/>
 	</div>
+	<div id="banner">
+		<tiles:insertAttribute name="banner"/>
+	</div>
 	
 	<div id="content">
 		<tiles:insertAttribute name="content"/>
 	</div>
-	
+<script>
+
+</script>
 	<div id="footer">
 		<tiles:insertAttribute name="footer"/>
 	</div>

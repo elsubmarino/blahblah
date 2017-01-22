@@ -23,7 +23,7 @@ public class QnaController {
 
 	@RequestMapping(value = "/qna/list")
 	public String qna(HttpServletRequest request,@RequestParam(value="num") int num) {
-		List<Qna> lists = qnaDo.getLists(num==1?1:(num-1)*10);
+		List<Qna> lists = qnaDo.getLists(num==1?0:(num-1)*10);
 		int pageNum=10;
 		int maxList=5;
 		int end=qnaDo.getCount();
@@ -45,7 +45,8 @@ public class QnaController {
 	}
 
 	@RequestMapping(value = "/qna/register")
-	public String qnaRegister() {
+	public String qnaRegister(HttpServletRequest request,HttpServletResponse response) {
+
 		return "register";
 	}
 
